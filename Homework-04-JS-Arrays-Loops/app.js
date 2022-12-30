@@ -1,5 +1,6 @@
 // Homework #1
 
+/*
 const stringNMA = [];
 
 stringNMA.push(prompt(String("Enter a name:")));
@@ -13,6 +14,7 @@ function tellStory(arrayNameMoodActivity) {
 
 const finalStorry = tellStory(stringNMA);
 console.log(finalStorry);
+*/
 
 // Homework #2
 
@@ -61,10 +63,12 @@ console.log(storyBigString);
 
 let consLog = "";
 for (let i = 1; i <= 20; i++) {
-  if (i % 2 == 0)
-  consLog += i + "\n";
-  if (i % 2 !== 0)
-  consLog += i + " ";
+  if (i % 2 == 0) {
+    consLog += i + "\n";
+  }
+  if (i % 2 !== 0) {
+    consLog += i + " ";
+  }
 }
 
 console.log(consLog);
@@ -92,23 +96,18 @@ console.log(sumOfMinMax(numbersArray));
 
 // Homework #6
 
-const firsNames = ["Dragan", "Ana", "Jana", "Boris"];
-const lastNames = ["Spasov", "Nikolov", "Jovanov", "Stojanov"];
+const firsNames = ["Dragan", "Ana", "Jana", "Boris", "Borjan"];
+const lastNames = ["Spasov", "Nikolov", "Jovanov", "Stojanov", "Hadjinikolovski"];
 
 function fullNamesOfStudents(firstArray, secondArray) {
   let i = 0;
-  let fullNames = " ";
+  let fullNames = [];
   while (i < firstArray.length) {
-    fullNames +=
-      i + 1 + ". " + firstArray[i] + " " + secondArray[i] + ", ";
+    fullNames.push(i + 1 + ". " + firstArray[i] + " " + secondArray[i]);
     i++;
   }
-
   return fullNames;
 }
 
-
-let fullNames = [];
-fullNames.push = fullNamesOfStudents(firsNames, lastNames);
-
-console.log(fullNames);
+let fullNamesArray = fullNamesOfStudents(firsNames, lastNames);
+console.log(fullNamesArray);
