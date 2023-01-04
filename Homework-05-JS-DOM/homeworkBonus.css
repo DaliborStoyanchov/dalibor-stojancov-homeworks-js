@@ -1,0 +1,15 @@
+body {
+  background-color: rgb(195, 163, 163);
+}
+
+#table {
+  display: block;
+  margin: 10px;
+  padding: 10px;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 5px;
+}
